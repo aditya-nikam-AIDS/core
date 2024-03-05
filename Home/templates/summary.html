@@ -8,17 +8,8 @@
    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     
-    <div class="container">
-    <div class="mx-auto container pt-1 " id="chart-container" style="width:80vw;" >
-        <canvas id="myBarChart"></canvas>
-        <p class="text-center"> {{state}} Loksabha Election 2024</p>
-    </div>
-</div>
-    {% comment %} <p>NDA seats:</p>{{NDA}}
-    <br>
-    <p>UPA seats:</p>{{INDIA}}
-    {{d}}
-    {{n}} {% endcomment %}
+ 
+   
     <div class="container">
         <div class="mx-auto container pt-1 " id="chart-container" style="width:50vw;" >
             <canvas id="myPieChart"></canvas>
@@ -28,27 +19,6 @@
 
       
     <script>
-        var ctx = document.getElementById('myBarChart').getContext('2d');
-        new Chart(ctx, {
-            type: 'bar',
-            data: {
-              labels:{{n|safe}},
-              datasets: [{
-                label: "Alliance",
-                data:{{d|safe}},
-                borderWidth: 2,
-               
-              }]
-            },
-            options: {
-                responsive:'true',
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
         var ctx = document.getElementById('myPieChart').getContext('2d');
         var myPieChart = new Chart(ctx, {
             type: 'pie',
