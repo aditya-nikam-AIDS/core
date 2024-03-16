@@ -1,4 +1,4 @@
-Index,Constituency_Name,Seat_Type,BJP,INC,DMK,Viduthalai_Chiruthaigal_Katchi,CPI_(Marxist),Communist_Party_of_India,Indian_Union_Muslim_League,AIADMK,Pattali_Makkal_Katchi,Makkal_Needhi_Maiam,Desiya_Murpokku_DK,Tamil_Maanila_Congress_(M),Independent,Strong_Party
+Index,Constituency_Name,Seat_Type,BJP,INC,DMK,Viduthalai_Chiruthaigal_Katchi,CPM,CPI,Indian_Union_Muslim_League,AIADMK,Pattali_Makkal_Katchi,Makkal_Needhi_Maiam,Desiya_Murpokku_DK,Tamil_Maanila_Congress_(M),Independent,Strong_Party
 1,arakkonam,gen,0,0,672190,0,0,0,0,0,343234,0,0,0,0,DMK
 2,arani,gen,0,617760,0,0,0,0,0,386954,0,0,0,0,0,INC
 3,chennai_central,gen,0,0,448911,0,0,0,0,0,147391,92249,0,0,0,DMK
@@ -35,5 +35,6 @@ Index,Constituency_Name,Seat_Type,BJP,INC,DMK,Viduthalai_Chiruthaigal_Katchi,CPI
 34,tirunelveli,gen,0,0,522623,0,0,0,0,337166,0,0,0,0,0,DMK
 35,tiruppur,gen,0,0,0,0,0,508725,0,415357,0,0,0,0,0,communist_party_of_india
 36,tiruvannamalai,gen,0,0,666272,0,0,0,0,362085,0,0,0,0,0,DMK
+,vellore,,,,485340,,,,,477199,,,,,,
 37,viluppuram,sc,0,0,559585,0,0,0,0,0,431517,0,0,0,0,DMK
 38,virudhunagar,gen,0,470883,0,0,0,0,0,0,0,0,316329,0,0,INC
