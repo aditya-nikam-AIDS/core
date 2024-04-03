@@ -16,7 +16,7 @@ def login_page(request):
         password=request.POST.get("password")
         if not User.objects.filter(username=user_name).exists():
             messages.error(request,"Invalid User Name")
-            return redirect(request,"login.html")
+            return redirect("/login/")
             
         user=authenticate(username=user_name,password=password)#this method check user name and password that would be authenticated password is encrypted
         if user is None:
@@ -423,7 +423,7 @@ def prediction(request):
                elif row2["INDIA"]>row2["NDA"] and row2["INDIA"]>row2["Other"]:
                   print("INDIA",row1["Constituency_Name"])
                   INDIA=INDIA+1
-               else:
+               elif row2["Other"]>row2["INDIA"] and row2["Other"]>row2["NDA"]:
                 print("BRS",row1["Constituency_Name"])
                 Other=Other+1
             return render(request,"result.html",{"d":[NDA,INDIA,Other],"n":["NDA","INDIA","Other"],"state":state,'a':[st_nda,st_india,st_other]})
