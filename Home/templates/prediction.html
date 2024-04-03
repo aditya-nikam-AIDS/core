@@ -259,7 +259,12 @@
               BJD
             </label>
           </div>
-          
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="VBA"  name="Other" id="flexCheckChecked" title="Vanchit Bahujan Aaghadi" >
+            <label class="form-check-label" for="flexCheckChecked" title="Vanchit Bahujan Aaghadi">
+              VBA
+            </label>
+          </div>
           
         
         
@@ -285,7 +290,7 @@
 </div>
 </div>
 </form>
-{% if messages %}
+{% comment %} {% if messages %}
 <ul class="messages">
     <div class="alert alert-primary" role="alert">
         {% for message in messages %}
@@ -294,7 +299,13 @@
       </div>
     
 </ul>
-{% endif %}
+{% endif %} {% endcomment %}
+<script>
+  {% for msg in messages%}
+
+  swal("Error",'{{msg}}',"error");
+  {% endfor %}
+</script>
 
 
 {% endblock start %}

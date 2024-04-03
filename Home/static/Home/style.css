@@ -21,13 +21,10 @@
     font-family: 'Outfit', sans-serif;
     font-size: 100% ;
   }
-  .navbar{
-    background-color: black !important;
-    
-  }
-  a{
-    color:white !important;
-    font: size 10px !important;
+ .navbar-brand,.navbar{
+    color:aliceblue;
+    background-color: black;
   }
   
-    
+  
+  
