@@ -178,8 +178,8 @@ def prediction(request):
                   print("INDIA",row1["Constituency_Name"])
                   INDIA=INDIA+1
                elif row2["Other"]>row2["INDIA"] and row2["Other"]>row2["NDA"]:
-                print("BRS",row1["Constituency_Name"])
-                Other=Other+1
+                  print("BRS",row1["Constituency_Name"])
+                  Other=Other+1
             return render(request,"result.html",{"d":[NDA,INDIA,Other],"n":["NDA","INDIA","Other"],"state":state,'a':[st_nda,st_india,st_other]})
     return render(request,"prediction.html")
 
