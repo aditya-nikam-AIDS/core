@@ -54,6 +54,8 @@ def log_out_page(request):
     return redirect("/")
 def home_prediction(request):
     return render(request,"prediction.html")
+def summary(request):
+    return render(request,"summary.html")
 UT=["Jammu_and_kashmir","Chandigarh","Andaman_and_Nicobar","Daman_and_Diu","Lakshadweep"]
 # def prediction(request):
 #     if request.method=="POST":
@@ -333,7 +335,6 @@ def prediction(request):
             json_records = df.reset_index().to_json(orient ='records') 
             data = [] 
             data =json.loads(json_records) 
-            print(data)
             return render(request,"result.html",{"d":[NDA,INDIA,Other],"n":["NDA","INDIA","Other"],"state":state,'a':[st_nda,st_india,st_other],'lok':data})
     return render(request,"prediction.html")
 
